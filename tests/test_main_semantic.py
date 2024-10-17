@@ -3,11 +3,11 @@ import pandas as pd
 from unittest.mock import patch
 import sys
 import os
-
+from src.data_loader import DataLoader  
+from src.embedding_search import EmbeddingSearch 
 # Asegúrate de que Python pueda encontrar el directorio 'src'
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '../src')))
-from data_loader import DataLoader  # Cambia esta línea a la clase correcta
-from embedding_search import EmbeddingSearch  # Cambia esta línea a la clase correcta
+
 
 
 class TestEmbeddingSearch(unittest.TestCase):

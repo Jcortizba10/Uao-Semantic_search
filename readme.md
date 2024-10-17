@@ -11,19 +11,26 @@ Git: Para clonar el repositorio y gestionar el control de versiones.
 <br>
 Python 3.10 o superior: Para ejecutar el código del proyecto.
 <br>
-Docker
+Docker : Para crear y correr el contenedor del proyecto.
 <br>
-Visual studeo code
+Visual studeo code : Recomendado para editar y gestionar el código.
+
+## Instrucciones
+<hr>
 
 # clonar proyecto
 git clone url-del-repositorio
 # acceder al proyecto
 cd app
 # correr proyecto docker en terminal
-crear imagen 
-docker build -t nombreproyecto .
-correr docker
+# crear imagen
+Asegúrate de tener Docker Desktop abierto antes de ejecutar el siguiente comando:
+docker build -t nombreproyecto .   
+# correr docker
 docker run -it nombreproyecto   ó   docker run -d nombreproyecto
+# Verificar que el contenedor esté corriendo:
+Para comprobar que el contenedor se está ejecutando correctamente, puedes listar los contenedores activos con el siguiente comando:
+docker ps
 <hr>
 
 # Información adicional sobre Semantic_search_studients_M.ipynb
@@ -61,3 +68,13 @@ Para utilizar la aplicación, asegúrate de tener todas las dependencias instala
 
 2. **Realizar Búsquedas**:
    - Puedes interactuar con la clase `MovieSearchApp` para realizar búsquedas utilizando el término que desees.
+
+
+## Uso de codigo en el archivo de test_main_semantic.py
+
+# El decorador @patch:
+El decorador @patch proviene del módulo unittest.mock de Python y se usa para simular (mockear) funciones o métodos de manera que no se ejecuten realmente durante la prueba, sino que se les dé un comportamiento controlado.
+Esto reemplaza temporalmente el método encode de la clase SentenceTransformer de la librería sentence_transformers con un objeto mock (simulado) durante la ejecución de la función de prueba (test_create_embeddings).
+
+# mock_encode:
+La función de prueba test_create_embeddings tiene un argumento adicional mock_encode que es pasado automáticamente por el decorador @patch. Este es el mock que reemplaza al método original SentenceTransformer.encode durante la ejecución de esta prueba. Puedes controlar cómo se comporta el mock en la prueba.
