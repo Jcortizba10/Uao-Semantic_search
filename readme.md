@@ -33,6 +33,32 @@ Para comprobar que el contenedor se está ejecutando correctamente, puedes lista
 docker ps
 <hr>
 
+## PASOS PARA CORRER test_main_semantic.py
+<hr>
+# acceder al proyecto
+cd app
+
+# crear entorno virtual
+python -m venv env
+ó
+virtualenv env
+
+# activar entorno 
+En Windows: source env/Scripts/activate
+En Linux/MacOS: source env/bin/activate
+
+# Instalacion de las librerias
+pip install -r requirements.txt
+
+# Correr test
+pytest test/tes_main_semantic.py
+
+# Generar reporte
+coverage run -m unittest discover (comando para guardar un reporte en memoria de todo el código)
+coverage report  (comando para guardar un reporte en el proyecto)
+coverage html    (comando para generar una carpeta que nos permite ver el reporte en una pagina html)
+
+
 # Información adicional sobre Semantic_search_studients_M.ipynb
 
 En este proyecto se realizó un Análisis Exploratorio de Datos (EDA) para comprender mejor el conjunto de datos y extraer información clave. Además, se llevaron a cabo diversas pruebas sobre cada una de las líneas de código para optimizar su funcionamiento y garantizar que el desarrollo fuera el más eficiente posible.
