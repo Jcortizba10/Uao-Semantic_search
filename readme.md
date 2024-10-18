@@ -54,9 +54,9 @@ pip install -r requirements.txt
 pytest test/tes_main_semantic.py
 
 # Generar reporte
-coverage run -m unittest discover (comando para guardar un reporte en memoria de todo el código)
-coverage report  (comando para guardar un reporte en el proyecto)
-coverage html    (comando para generar una carpeta que nos permite ver el reporte en una pagina html)
+* coverage run -m unittest discover (comando para guardar un reporte en memoria de todo el código)
+* coverage report  (comando para guardar un reporte en el proyecto)
+* coverage html    (comando para generar una carpeta que nos permite ver el reporte en una pagina html)
 
 
 # Información adicional sobre Semantic_search_studients_M.ipynb
