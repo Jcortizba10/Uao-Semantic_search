@@ -96,7 +96,7 @@ Para utilizar la aplicación, asegúrate de tener todas las dependencias instala
    - Puedes interactuar con la clase `MovieSearchApp` para realizar búsquedas utilizando el término que desees.
 
 
-## Uso de codigo en el archivo de test_main_semantic.py
+## Uso de código en el archivo de test_main_semantic.py
 
 # El decorador @patch:
 El decorador @patch proviene del módulo unittest.mock de Python y se usa para simular (mockear) funciones o métodos de manera que no se ejecuten realmente durante la prueba, sino que se les dé un comportamiento controlado.
@@ -104,3 +104,7 @@ Esto reemplaza temporalmente el método encode de la clase SentenceTransformer d
 
 # mock_encode:
 La función de prueba test_create_embeddings tiene un argumento adicional mock_encode que es pasado automáticamente por el decorador @patch. Este es el mock que reemplaza al método original SentenceTransformer.encode durante la ejecución de esta prueba. Puedes controlar cómo se comporta el mock en la prueba.
+
+# Imagen de mi coverage html
+
+![alt text](image.png)
