@@ -96,7 +96,7 @@ Para utilizar la aplicación, asegúrate de tener todas las dependencias instala
    - Puedes interactuar con la clase `MovieSearchApp` para realizar búsquedas utilizando el término que desees.
 
 
-## Uso de código en el archivo de test_main_semantic.py
+## Explicacion de algunas lineas de código en el archivo de test_main_semantic.py
 
 # El decorador @patch:
 El decorador @patch proviene del módulo unittest.mock de Python y se usa para simular (mockear) funciones o métodos de manera que no se ejecuten realmente durante la prueba, sino que se les dé un comportamiento controlado.
