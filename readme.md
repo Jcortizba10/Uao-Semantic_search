@@ -79,11 +79,11 @@ El código resultante de este análisis y pruebas fue integrado en el archivo pr
 
 ### Clase Principal
 
-- **MovieSearchApp**: Se ha implementado la clase `MovieSearchApp`, que gestiona la interacción del usuario. Esta clase orquesta la carga de datos utilizando `DataLoader` y realiza búsquedas a través de una instancia de `SimilaritySearchInterface`.
+- **MovieSearchApp**: Se ha implementado la clase `MovieSearch`, que gestiona la interacción del usuario. Esta clase orquesta la carga de datos utilizando `DataLoader` y realiza búsquedas a través de una instancia de `SimilaritySearchInterface`.
 
 ### Inyección de Dependencias
 
-- **Inyección de Dependencias**: La clase `MovieSearchApp` recibe instancias de `DataLoader` y `SimilaritySearchInterface` como argumentos. Este enfoque permite modificar o extender fácilmente la funcionalidad de la aplicación sin alterar la lógica existente, promoviendo así un diseño más limpio y modular.
+- **Inyección de Dependencias**: La clase `MovieSearch` recibe instancias de `DataLoader` y `SimilaritySearchInterface` como argumentos. Este enfoque permite modificar o extender fácilmente la funcionalidad de la aplicación sin alterar la lógica existente, promoviendo así un diseño más limpio y modular.
 
 ## Uso
 
@@ -93,7 +93,7 @@ Para utilizar la aplicación, asegúrate de tener todas las dependencias instala
    - La clase `DataLoader` se encargará de cargar los datos necesarios para la búsqueda.
 
 2. **Realizar Búsquedas**:
-   - Puedes interactuar con la clase `MovieSearchApp` para realizar búsquedas utilizando el término que desees.
+   - Puedes interactuar con la clase `MovieSearch` para realizar búsquedas utilizando el término que desees.
 
 
 ## Explicacion de algunas lineas de código en el archivo de test_main_semantic.py
