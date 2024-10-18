@@ -107,4 +107,4 @@ La función de prueba test_create_embeddings tiene un argumento adicional mock_e
 
 # Imagen de mi coverage html
 
-![alt text](covage_html.png)
+![alt text](coverage_html.png)
